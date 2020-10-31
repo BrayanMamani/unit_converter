@@ -18,7 +18,11 @@ class UnitConverterApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green[100],
         body: Center(
-          child: Category(),
+          child: Category(
+            name: _categoryName,
+            iconLocation: _categoryIcon,
+            color: _categoryColor,
+          ),
         ),
       ),
     );
