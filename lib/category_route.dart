@@ -53,7 +53,21 @@ class CategoryRoute extends StatelessWidget {
       child: _buildCategoryWidgets(categories),
     );
 
+    final appBar = AppBar(
+      elevation: 0.0,
+      title: Text(
+        'Unit Converter',
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 30.0,
+        ),
+      ),
+      centerTitle: true,
+      backgroundColor: _backgroundColor,
+    );
+
     return Scaffold(
+      appBar: appBar,
       body: listView,
     );
   }
