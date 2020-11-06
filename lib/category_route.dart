@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unit_converter/category.dart';
 import 'package:unit_converter/unit.dart';
+import 'package:unit_converter/category_title.dart';
 
 final _backgroundColor = Colors.green[100];
 
@@ -12,6 +13,8 @@ class CategoryRoute extends StatefulWidget {
 }
 
 class _CategoryRouteState extends State<CategoryRoute> {
+  // TODO: Keep track of a default [Category], and the currently-selected
+  // [Category]
   final _categories = <Category>[];
   static const _categoryNames = <String>[
     'Length',
@@ -72,9 +75,16 @@ class _CategoryRouteState extends State<CategoryRoute> {
     }
   }
 
+  void _onCategoryTap(Category category) {}
+
   Widget _buildCategoryWidgets() {
     return ListView.builder(
-      itemBuilder: (BuildContext context, int index) => _categories[index],
+      itemBuilder: (BuildContext context, int index) {
+        return CategoryTile(
+          category: _categories[index],
+          onTap: _onCategoryTap,
+        );
+      },
       itemCount: _categories.length,
     );
   }
