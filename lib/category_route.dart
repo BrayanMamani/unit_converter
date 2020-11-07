@@ -13,8 +13,6 @@ class CategoryRoute extends StatefulWidget {
 }
 
 class _CategoryRouteState extends State<CategoryRoute> {
-  // TODO: Keep track of a default [Category], and the currently-selected
-  // [Category]
   final _categories = <Category>[];
   static const _categoryNames = <String>[
     'Length',

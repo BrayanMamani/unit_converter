@@ -83,8 +83,6 @@ class _UnitConverterState extends State<UnitConverter> {
       if (input == null || input.isEmpty) {
         _convertedValue = '';
       } else {
-        // Even though we are using the numerical keyboard, we still have to check
-        // for non-numerical input such as '5..0' or '6 -3'
         try {
           final inputDouble = double.parse(input);
           _showValidationError = false;
