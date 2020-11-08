@@ -19,5 +19,14 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
-
   uses-material-design: true
+
+  assets:
+    - assets/icons/area.png
+    - assets/icons/currency.png
+    - assets/icons/digital_storage.png
+    - assets/icons/length.png
+    - assets/icons/mass.png
+    - assets/icons/power.png
+    - assets/icons/time.png
+    - assets/icons/volume.png
