@@ -22,6 +22,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/data/regular_units.json
     - assets/icons/area.png
     - assets/icons/currency.png
     - assets/icons/digital_storage.png
