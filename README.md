@@ -6,7 +6,9 @@ Dart is the programming language for Flutter, Google's UI toolkit for building b
 
 ## About Unit Converter
 
-This repository has an application to perform unit conversions, where you can perform conversions for different characteristics.
+This repository has an application to carry out unit conversions. Where you can make conversions according to what you require.
+
+<img src="unit_converter.gif" width="300">
 
 ## What you will need
 
